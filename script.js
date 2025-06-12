@@ -459,7 +459,10 @@ function updateNilai(newTotal) {
         loadScreen();
     }).fail((e) => {
         errMsg.textContent = "error: " + e.toString();
-    })function cleanTextFromWord(text) {
+    })
+}    
+    
+    function cleanTextFromWord(text) {
     if (typeof text !== 'string') {
         return ''; // Pastikan input adalah string
     }
@@ -502,5 +505,3 @@ function updateNilai(newTotal) {
 
     return cleaned;
 }
-}
-
